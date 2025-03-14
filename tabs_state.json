@@ -2,6 +2,7 @@
   "tabs": [
     {
       "id": "tab-1",
+      "name": "SSEs",
       "type": "wheel",
       "items": [
         {
@@ -80,6 +81,7 @@
     },
     {
       "id": "tab-2",
+      "name": "Topics",
       "type": "wheel",
       "items": [
         {
@@ -133,11 +135,20 @@
         {
           "label": "KBs",
           "multiplier": "1"
+        },
+        {
+          "label": "OAM",
+          "multiplier": "1"
+        },
+        {
+          "label": "ASAr2",
+          "multiplier": "1"
         }
       ]
     },
     {
       "id": "tab-3",
+      "name": "Outcomes",
       "type": "wheel",
       "items": [
         {
@@ -167,15 +178,12 @@
         {
           "label": "Continuum of Care",
           "multiplier": "1"
-        },
-        {
-          "label": "OAM",
-          "multiplier": "1"
         }
       ]
     },
     {
       "id": "tab-4",
+      "name": "Dice",
       "type": "dice",
       "diceCount": "2",
       "diceSides": "20"

@@ -614,7 +614,13 @@ function saveTabsStateToFile() {
   const tabHeaders = document.querySelectorAll('.tab:not(.add-tab)');
   tabHeaders.forEach(tab => {
     const tabId = tab.getAttribute('data-tab-id');
-    let tabState = { id: tabId };
+    // Get the tab name (text content without the close button)
+    const tabName = tab.childNodes[0].nodeValue.trim();
+    
+    let tabState = { 
+      id: tabId,
+      name: tabName // Save the tab name
+    };
     const tabContent = document.querySelector(`.tab-content[data-tab-id="${tabId}"]`);
 
     // Determine the tab type by looking for a specific container.
@@ -697,7 +703,8 @@ function loadTabsStateFromData(state) {
       newTab = document.createElement('div');
       newTab.classList.add('tab');
       newTab.setAttribute('data-tab-id', newTabId);
-      newTab.textContent = 'Wheel ' + tabCounter;
+      // Use the saved tab name if available, otherwise use default
+      newTab.textContent = tabState.name || ('Wheel ' + tabCounter);
       const closeBtn = document.createElement('span');
       closeBtn.classList.add('close-tab');
       closeBtn.textContent = ' ×';
@@ -749,7 +756,8 @@ function loadTabsStateFromData(state) {
       newTab = document.createElement('div');
       newTab.classList.add('tab');
       newTab.setAttribute('data-tab-id', newTabId);
-      newTab.textContent = 'Dice ' + tabCounter;
+      // Use the saved tab name if available, otherwise use default
+      newTab.textContent = tabState.name || ('Dice ' + tabCounter);
       const closeBtn = document.createElement('span');
       closeBtn.classList.add('close-tab');
       closeBtn.textContent = ' ×';
