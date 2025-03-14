@@ -1,0 +1,65 @@
+<!doctype html>
+<html>
+
+<head>
+  <title>Wheel of Interrogation</title>
+  <meta charset="UTF-8" />
+  <link rel="stylesheet" href="src/styles.css" />
+</head>
+
+<body>
+
+  <div id="winner-modal" class="winner-modal" style="display: none;">
+    <div class="modal-content">
+      <span id="modal-close" class="modal-close">&times;</span>
+      <p id="winner-message"></p>
+    </div>
+  </div>
+  <div id="winner-banner" class="winner-banner" style="display: none;">
+    <span id="winner-message"></span>
+    <span id="banner-close" class="banner-close">&times;</span>
+  </div>
+
+  <!-- Tab Bar -->
+  <div id="tabs-bar">
+    <div class="tab active" data-tab-id="tab-1">Wheel 1</div>
+    <div class="tab add-tab" id="add-tab" title="Add Wheel">🎡</div>
+    <div class="tab add-tab" id="add-dice-tab" title="Add Dice Roller">🎲</div>
+  </div>
+
+  <!-- Tabs Content -->
+  <div id="tabs-content">
+    <div class="tab-content active" data-tab-id="tab-1">
+      <div class="spin-the-wheel">
+        <div class="wheel-container">
+          <canvas class="wheel" width="600" height="600"></canvas>
+          <button class="spin">SPIN</button>
+        </div>
+        <div class="input-container">
+          <button class="clear-chips">×</button>
+          <div class="chip-container">
+            <input type="text" class="item-input" placeholder="Enter items..." />
+          </div>
+        </div>
+      </div>
+      <div class="dice-roller">
+        <div class="dice-controls">
+          <label>Dice Count: <input type="number" class="dice-count" value="1" min="1" /></label>
+          <label>Sides: <input type="number" class="dice-sides" value="6" min="2" /></label>
+          <button class="roll-dice">Roll Dice</button>
+        </div>
+        <div class="dice-result"></div>
+      </div>
+    </div>
+  </div>
+
+  <div id="save-load-container" style="position: fixed; top: 10px; right: 10px; display: flex; gap: 10px;">
+    <button id="save-state">Save</button>
+    <button id="load-state">Load</button>
+    <input type="file" id="load-state-file" accept=".json" style="display: none;" />
+  </div>
+  <!-- JavaScript -->
+  <script defer src="src/index.js"></script>
+</body>
+
+</html>

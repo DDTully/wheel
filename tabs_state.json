@@ -1,0 +1,185 @@
+{
+  "tabs": [
+    {
+      "id": "tab-1",
+      "type": "wheel",
+      "items": [
+        {
+          "label": "Anthony",
+          "multiplier": "1"
+        },
+        {
+          "label": "Nick",
+          "multiplier": "1"
+        },
+        {
+          "label": "Eric",
+          "multiplier": "1"
+        },
+        {
+          "label": "Brian",
+          "multiplier": "1"
+        },
+        {
+          "label": "Gordon",
+          "multiplier": "1"
+        },
+        {
+          "label": "Chuck",
+          "multiplier": "1"
+        },
+        {
+          "label": "Terry",
+          "multiplier": "1"
+        },
+        {
+          "label": "Adrian",
+          "multiplier": "1"
+        },
+        {
+          "label": "Matt",
+          "multiplier": "1"
+        },
+        {
+          "label": "Tim",
+          "multiplier": "1"
+        },
+        {
+          "label": "Brenton",
+          "multiplier": "1"
+        },
+        {
+          "label": "Barry",
+          "multiplier": "1"
+        },
+        {
+          "label": "Kyle",
+          "multiplier": "1"
+        },
+        {
+          "label": "Dan",
+          "multiplier": "1"
+        },
+        {
+          "label": "Justin",
+          "multiplier": "1"
+        },
+        {
+          "label": "Ron",
+          "multiplier": "1"
+        },
+        {
+          "label": "Richard",
+          "multiplier": "1"
+        },
+        {
+          "label": "Jim",
+          "multiplier": "1"
+        }
+      ]
+    },
+    {
+      "id": "tab-2",
+      "type": "wheel",
+      "items": [
+        {
+          "label": "CSS Track",
+          "multiplier": "1"
+        },
+        {
+          "label": "CaseTrack",
+          "multiplier": "1"
+        },
+        {
+          "label": "SmartSolve",
+          "multiplier": "1"
+        },
+        {
+          "label": "ASUP",
+          "multiplier": "1"
+        },
+        {
+          "label": "SAMs",
+          "multiplier": "1"
+        },
+        {
+          "label": "Proactive Engagement",
+          "multiplier": "1"
+        },
+        {
+          "label": "Top 100",
+          "multiplier": "1"
+        },
+        {
+          "label": "Bottom 99",
+          "multiplier": "1"
+        },
+        {
+          "label": "PVR",
+          "multiplier": "1"
+        },
+        {
+          "label": "ASEs",
+          "multiplier": "1"
+        },
+        {
+          "label": "Net2",
+          "multiplier": "1"
+        },
+        {
+          "label": "Dogs",
+          "multiplier": "1"
+        },
+        {
+          "label": "KBs",
+          "multiplier": "1"
+        }
+      ]
+    },
+    {
+      "id": "tab-3",
+      "type": "wheel",
+      "items": [
+        {
+          "label": "RSUs",
+          "multiplier": "1"
+        },
+        {
+          "label": "Have a good weekend",
+          "multiplier": "1"
+        },
+        {
+          "label": "Roll for damage",
+          "multiplier": "1"
+        },
+        {
+          "label": "45% Raise",
+          "multiplier": "1"
+        },
+        {
+          "label": "-45% Raise",
+          "multiplier": "1"
+        },
+        {
+          "label": "Eric will fill out your CSSTrack",
+          "multiplier": "1"
+        },
+        {
+          "label": "Continuum of Care",
+          "multiplier": "1"
+        },
+        {
+          "label": "OAM",
+          "multiplier": "1"
+        }
+      ]
+    },
+    {
+      "id": "tab-4",
+      "type": "dice",
+      "diceCount": "2",
+      "diceSides": "20"
+    }
+  ],
+  "activeTabId": "tab-1"
+}
